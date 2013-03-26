@@ -10,7 +10,8 @@ app_options:
     ascii_mode: true
   org.vim.MacVim:
     ascii_mode: false
-config_version: 0.18.custom.1623458423
+chord_duration: 0.1
+config_version: 0.19.custom.1623458423
 customization: 1623458423
 preset_color_schemes:
   Solarized_Rock:
@@ -118,4 +119,5 @@ style:
   corner_radius: 5
   font_point: 16
   horizontal: false
+  line_spacing: 1
 us_keyboard_layout: true

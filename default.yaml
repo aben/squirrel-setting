@@ -1,11 +1,11 @@
 ascii_composer:
-  good_old_caps_lock: false
+  good_old_caps_lock: true
   switch_key:
     Control_L: noop
     Control_R: noop
     Shift_L: inline_ascii
     Shift_R: noop
-config_version: 0.17.custom.2308090593
+config_version: 0.18.custom.2308090593
 customization: 2308090593
 key_binder:
   bindings:
@@ -105,10 +105,10 @@ punctuator:
       - "＊"
       - "*"
       - "・"
+      - "·"
       - "×"
       - "※"
       - "❂"
-      - "·"
     "+":
       - "＋"
       - "+"
@@ -217,10 +217,10 @@ punctuator:
       - "*"
       - "＊"
       - "・"
+      - "·"
       - "×"
       - "※"
       - "❂"
-      - "·"
     "+": "+"
     ",":
       commit: "，"

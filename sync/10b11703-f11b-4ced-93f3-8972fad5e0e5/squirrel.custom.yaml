@@ -35,9 +35,16 @@ patch:
     text_color: 0x423607             
     candidate_text_color: 0x969483   
     back_color: 0xe3f6fd            
-    border_color: 0xd5e8ee          
-    hilited_candidate_text_color: 0xffffff  
-    hilited_candidate_back_color: 0x8236d3  
+    hilited_candidate_text_color: 0x0089b5  
+  #preset_color_schemes/Solarized_Silence:  
+    #name: Solarized silence
+    #author: Aben <tntaben@gmail.com>, original artwork by Solarized
+    #text_color: 0x423607             
+    #candidate_text_color: 0x969483   
+    #back_color: 0xe3f6fd            
+    #border_color: 0xe3f6fd          
+    #hilited_candidate_text_color: 0xffffff  
+    #hilited_candidate_back_color: 0x8236d3  
     #Solarized colors '#BBGGRR'
     #(base03  "#362b00")
     #(base02  "#423607")
