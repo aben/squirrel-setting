@@ -1,4 +1,5 @@
-*.bin # 由 *.schema.yaml 和 *.dict.yaml 轉換而成的二進制文件，較大
-*.kct # 用戶詞典
-*.kct.snapshot # 用戶詞典快照
-sync # 同步文件夾，存放備份
+*.bin
+*.kct
+*.kct.wal
+*.kct.snapshot
+sync
