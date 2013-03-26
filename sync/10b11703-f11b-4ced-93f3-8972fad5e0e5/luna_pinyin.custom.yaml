@@ -1,3 +1,0 @@
-#替換爲西文標點
-#patch:
-  #'punctuator/import_preset': alternative
