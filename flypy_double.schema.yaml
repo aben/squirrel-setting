@@ -1,0 +1,75 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema :
+  schema_id : flypy_double
+  name : 小鹤双拼加形
+  version : "2015.1.15"
+  author :
+    - 码表作者：小鹤双拼 www.flypy.com
+    - 原方案作者：P1461@百度贴吧
+    - 方案修改：zecy@github.com
+  description : |
+      小鹤双拼，双形为辅助码，有需要时按 tab 键移动光标补加形码。
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+    - fluid_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+  filters:
+    - simplifier
+    - uniquifier
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  algebra:
+    # 双拼音节切分。如果不设置只能严格按照码表输出。
+    # 如码表中「项」字编码为「xlg」。
+    # 如果不该项，输入「xl」将不会出现「项」，为自组词造成麻烦。
+    - fuzz/^(\w\w)\w*/$1/
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: simplification
+    states: ["漢字", "汉字"]
+  - name: ascii_punct
+    states: ["。，", "．，"]
+simplifier:
+  #option_name: zh_simp
+  option_name: flypy_zh_simp
+  opencc_option: s2t.json
+translator:
+  dictionary: flypy_double
+  prism: flypy_double
+#translator:
+  #dictionary: flypy_double
+punctuator:
+  import_preset: symbols
+key_binder:
+  import_preset: default
+  bindings:
+    # 把 tab 映射为右箭头，通过光标移动到相应音节以便添加形码
+    - { when: composing, accept: "Tab", send: 'Right' }
+    - { when: has_menu, accept: "Tab", send: 'Right' }
+    - { when: has_menu, accept: semicolon,  send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }
+recognizer:
+  import_preset: default
