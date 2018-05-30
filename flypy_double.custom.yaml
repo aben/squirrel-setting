@@ -1,0 +1,18 @@
+patch:
+  menu/page_size: 3
+  # engine/processors:
+  #   - ascii_composer
+  #   - recognizer
+  #   - key_binder
+  #   - speller
+  #   - punctuator
+  #   - selector
+  #   - navigator
+  #   - express_editor
+  #   - fluid_editor # ※ 句式編輯器，用於以空格斷詞、回車上屏的【注音】、【語句流】等輸入方案，替換 express_editor，也可以寫作 fluency_editor
+  key_binder/bindings:
+    # 把 tab 映射为右箭头，通过光标移动到相应音节以便添加形码
+    - { when: composing, accept: "Tab", send: 'Right' }
+    - { when: has_menu, accept: "Tab", send: 'Right' }
+    - { when: has_menu, accept: semicolon,  send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }

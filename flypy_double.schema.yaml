@@ -21,7 +21,6 @@ engine:
     - selector
     - navigator
     - express_editor
-    - fluid_editor
   segmentors:
     - ascii_segmentor
     - matcher
@@ -58,18 +57,10 @@ simplifier:
   opencc_option: s2t.json
 translator:
   dictionary: flypy_double
-  prism: flypy_double
-#translator:
-  #dictionary: flypy_double
+  #prism: flypy_double
 punctuator:
   import_preset: symbols
 key_binder:
   import_preset: default
-  bindings:
-    # 把 tab 映射为右箭头，通过光标移动到相应音节以便添加形码
-    - { when: composing, accept: "Tab", send: 'Right' }
-    - { when: has_menu, accept: "Tab", send: 'Right' }
-    - { when: has_menu, accept: semicolon,  send: 2 }
-    - { when: has_menu, accept: apostrophe, send: 3 }
 recognizer:
   import_preset: default
