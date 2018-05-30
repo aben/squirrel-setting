@@ -7,22 +7,23 @@
 因爲鼠鬚管好久沒發佈更新包了，所以我自己編譯了一份，玩法有了一些變化，不折騰不舒服斯基：）
 
 第一步，自己編譯一份最新版的[鼠鬚管](https://github.com/rime/squirrel)，官方教程
+
 [https://github.com/rime/squirrel/blob/master/INSTALL.md](https://github.com/rime/squirrel/blob/master/INSTALL.md)
 
 第二步，安裝[東風破 /plum/](https://github.com/rime/plum)，新玩法。
 
 ```shell
-	cd ~//Library/Rime
-	curl -fsSL https://git.io/rime-install | bash
-	./plum/rime-install prelude luna-pinyin double-pinyin emoji
+cd ~//Library/Rime
+curl -fsSL https://git.io/rime-install | bash
+./plum/rime-install prelude luna-pinyin double-pinyin emoji
 ```
 
 第三步，複製文件，根據自己的需求做適當修改定製文件配置`*.custom.yaml`，有註釋。
 
 ```shell
-	cd ~/Workspace
-	git clone https://github.com/Aben/squirrel-setting.git
-	cp *.yaml ~/Library/Rime/
+cd ~/Workspace
+git clone https://github.com/Aben/squirrel-setting.git
+cp *.yaml ~/Library/Rime/
 ```
 
 注意：
