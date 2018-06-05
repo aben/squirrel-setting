@@ -1,6 +1,6 @@
 我的鼠鬚管輸入法配置
 ================
- 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)，添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案，準備嘗試一下，製作了一份「batman」的皮膚，顺带折腾了一下字体。
+ 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)，添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案，利用反查（[reverse_lookup](https://github.com/Aben/squirrel-setting/blob/587c818d99c7f78826515561e81f53869deda145/double_pinyin_flypy.custom.yaml#L33)）輸入生僻字，不用翻頁去查找，代價就是需要學習形碼，製作了一份「batman」的皮膚，顺带折腾了一下字体，需要自己安装字体。
 
 安装
 ------
@@ -15,7 +15,7 @@
 ```shell
 cd ~//Library/Rime
 curl -fsSL https://git.io/rime-install | bash
-./plum/rime-install prelude luna-pinyin double-pinyin emoji
+./plum/rime-install prelude essay luna-pinyin double-pinyin emoji
 ```
 
 第三步，複製文件，根據自己的需求做適當修改定製文件配置`*.custom.yaml`，有註釋。
@@ -39,7 +39,7 @@ sync_dir: "/Users/<User>/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 ChangeLog
 ------
 1. 擴充了[詞庫](https://github.com/rime-aca/dictionaries)
-2. 添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案（試驗階段）
+2. 添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案
 3. 製作了一份「batman」的皮膚。
 
 *****
