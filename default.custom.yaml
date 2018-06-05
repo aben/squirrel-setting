@@ -12,11 +12,11 @@
 
 patch:
   ascii_composer/switch_key:
-    # Shift_L: inline_ascii
-    # Shift_R: noop
-    # Control_L: noop
-    # Control_R: noop
-    # Shift_L: clear #清碼
+    #  Shift_L: inline_ascii
+    #  Shift_R: noop
+    Control_L: commit_code
+    #  Control_R: noop
+    Shift_L: clear
   schema_list:
     - schema: luna_pinyin          # 朙月拼音
     #- schema: luna_pinyin_simp     # 朙月拼音 简化字模式
@@ -33,11 +33,12 @@ patch:
     #- schema: double_pinyin        # 自然碼雙拼
     #- schema: double_pinyin_mspy   # 微軟雙拼
     #- schema: double_pinyin_abc    # 智能ABC雙拼
-    - schema: double_pinyin_flypy  # 小鶴雙拼
-    - schema: flypy_double          #小鶴雙拼形碼
-    #- schema: wugniu        # 吳語上海話（新派）
-    #- schema: wugniu_lopha  # 吳語上海話（老派）
-    #- schema: sampheng      # 中古漢語三拼
-    #- schema: zyenpheng     # 中古漢語全拼
-    #- schema: ipa_xsampa    # X-SAMPA 國際音標
-    - schema: emoji         # emoji表情
+    - schema: double_pinyin_flypy   # 小鶴雙拼
+    - schema: double_pinyin_flypy_table # 小鶴雙拼形碼
+    - schema: combo_pinyin          # 宮保拼音
+    #- schema: wugniu               # 吳語上海話（新派）
+    #- schema: wugniu_lopha         # 吳語上海話（老派）
+    #- schema: sampheng             # 中古漢語三拼
+    #- schema: zyenpheng            # 中古漢語全拼
+    #- schema: ipa_xsampa           # X-SAMPA 國際音標
+    - schema: emoji                 # emoji表情

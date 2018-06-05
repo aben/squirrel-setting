@@ -1,6 +1,6 @@
 我的鼠鬚管輸入法配置
 ================
- 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)，添加了[小鶴雙拼形碼](https://github.com/zecy/flypy_double)輸入方案，準備嘗試一下，製作了一份「batman」的皮膚，顺带折腾了一下字体。
+ 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)，添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案，準備嘗試一下，製作了一份「batman」的皮膚，顺带折腾了一下字体。
 
 安装
 ------
@@ -39,7 +39,7 @@ sync_dir: "/Users/<User>/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 ChangeLog
 ------
 1. 擴充了[詞庫](https://github.com/rime-aca/dictionaries)
-2. 添加了[小鶴雙拼形碼](https://github.com/zecy/flypy_double)輸入方案（試驗階段）
+2. 添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案（試驗階段）
 3. 製作了一份「batman」的皮膚。
 
 *****

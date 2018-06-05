@@ -1,5 +1,5 @@
 patch:
-  menu/page_size: 3
+  #menu/page_size: 5
   # engine/processors:
   #   - ascii_composer
   #   - recognizer
@@ -14,5 +14,5 @@ patch:
     # 把 tab 映射为右箭头，通过光标移动到相应音节以便添加形码
     - { when: composing, accept: "Tab", send: 'Right' }
     - { when: has_menu, accept: "Tab", send: 'Right' }
-    - { when: has_menu, accept: semicolon,  send: 2 }
-    - { when: has_menu, accept: apostrophe, send: 3 }
+    #- { when: has_menu, accept: semicolon,  send: 2 }
+    #- { when: has_menu, accept: apostrophe, send: 3 }
