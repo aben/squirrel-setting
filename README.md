@@ -1,6 +1,6 @@
 我的鼠鬚管輸入法配置
 ================
- 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)，添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案，利用反查（[reverse_lookup](https://github.com/Aben/squirrel-setting/blob/587c818d99c7f78826515561e81f53869deda145/double_pinyin_flypy.custom.yaml#L33)）輸入生僻字，不用翻頁去查找，代價就是需要學習形碼，製作了一份「batman」的皮膚，顺带折腾了一下字体，需要自己安装字体。
+ 輸入方案使用小鶴雙拼，擴充了[詞庫](https://github.com/rime-aca/dictionaries)添加了[小鶴音形](https://github.com/nunchaju/rime-hepy)輸入方案，利用反查（[reverse_lookup](https://github.com/Aben/squirrel-setting/blob/587c818d99c7f78826515561e81f53869deda145/double_pinyin_flypy.custom.yaml#L33)）輸入生僻字，不用翻頁去查找，代價就是需要學習形碼，製作了一份「batman」的皮膚，順便折騰了一下字體，需要自行安裝字體。
 
 安装
 ------
@@ -27,8 +27,6 @@ cp *.yaml ~/Library/Rime/
 ```
 
 注意：
-
-* `double_pinyin_flypy.custom.yaml` 適用於所有雙拼方案（「自然碼雙拼」、「智能ABC雙拼」、「小鶴雙拼」、「MSPY雙拼」）。只須將此`custom.yaml` 的前面名字改爲對應的輸入方案名字然後放入用戶文件夾重新部署即可。如 `double_pinyin_abc.custom.yaml`。
 
 * `installation.yaml`添加sync_dir可修改備份目錄，比如備份到iCloud。
 
