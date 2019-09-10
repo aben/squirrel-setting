@@ -13,26 +13,26 @@
 第二步，安裝[東風破 /plum/](https://github.com/rime/plum)，新玩法。
 
 ```shell
-cd ~//Library/Rime
 curl -fsSL https://git.io/rime-install | bash
-./plum/rime-install prelude essay luna-pinyin double-pinyin emoji
+~/Library/Rime/plum/rime-install prelude essay luna-pinyin double-pinyin emoji
 ```
 
 第三步，複製文件，根據自己的需求做適當修改定製文件配置`*.custom.yaml`，有註釋。
 
 ```shell
-cd ~/Workspace
 git clone https://github.com/Aben/squirrel-setting.git
-cp *.yaml ~/Library/Rime/
+cp squirrel-setting/*.yaml ~/Library/Rime/
 ```
 
 注意：
 
 * `installation.yaml`添加sync_dir可修改備份目錄，比如備份到iCloud。
 
-```yml
+```
 sync_dir: "/Users/<User>/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 ```
+
+* 用到了[iosevka](https://github.com/be5invis/Iosevka)和苹方字体
 
 ChangeLog
 ------
@@ -42,5 +42,3 @@ ChangeLog
 
 *****
 憑記憶整理的，有遺漏或錯誤提issue吧
-
-

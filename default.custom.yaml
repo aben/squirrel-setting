@@ -34,7 +34,7 @@ patch:
     #- schema: double_pinyin_abc    # 智能ABC雙拼
     - schema: double_pinyin_flypy   # 小鶴雙拼
     #- schema: double_pinyin_flypy_table # 小鶴雙拼形碼
-    - schema: combo_pinyin          # 宮保拼音
+    #- schema: combo_pinyin          # 宮保拼音
     #- schema: wugniu               # 吳語上海話（新派）
     #- schema: wugniu_lopha         # 吳語上海話（老派）
     #- schema: sampheng             # 中古漢語三拼
